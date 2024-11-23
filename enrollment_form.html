@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="enroollment_form.css">
+</head>
+<body>
+    <h1>Student Enrollment Form</h1>
+    <h3>Instruction:</h3>
+    <ol>
+        <li>Fill in the form fields</li>
+        <li>Check your interests</li>
+        <li>Click "Enroll Now" to submit</li>
+    </ol>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-group">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" required>
+            </div>
+            <div class="form-group">
+                <label>Sex:</label>
+                <div class="radio-group">
+                    <input type="radio" id="male" name="sex" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="sex" value="Female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Selection</legend>
+            <div class="form-group">
+                <label for="course">Course Options:</label>
+                <select id="course" name="course">
+                    <option value="BSIT">BSIT</option>
+                    <option value="BSSW">BSSW</option>
+                    <option value="BSPA">BSPA</option>
+                    <option value="BSAIS">BSAIS</option>
+                    <option value="BTVTED">BTVTED</option>
+                    <option value="BSA">BSA</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Interests</legend>
+            <div class="form-group">
+                <input type="checkbox" id="web-development" name="interests" value="Web Development">
+                <label for="web-development">Web Development</label><br>
+                <input type="checkbox" id="data-science" name="interests" value="Data Science">
+                <label for="data-science">Data Science</label><br>
+                <input type="checkbox" id="networking" name="interests" value="Networking">
+                <label for="networking">Networking</label><br>
+                <input type="checkbox" id="graphic-design" name="interests" value="Graphic Design">
+                <label for="graphic-design">Graphic Design</label>
+            </div>
+        </fieldset>
+        <button type="submit">Enroll Now</button>
+    </form>
+
+    <h2>Student Data</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Course</th>
+            <th>Interests</th>
+        </tr>
+        <tr>
+            <td>1029</td>
+            <td>Nerica Mecantina</td>
+            <td>nerica@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>1038</td>
+            <td>Cardo Dalisay</td>
+            <td>cardo@gmail.com</td>
+            <td>22</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Data Science</td>
+        </tr>
+        <tr>
+            <td>1047</td>
+            <td>Trish Huedem</td>
+            <td>trish@gmail.com</td>
+            <td>21</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Graphic Design</td>
+        </tr>
+        <tr>
+            <td>1056</td>
+            <td>Juan Dela Cruz</td>
+            <td>juan@gmail.com</td>
+            <td>26</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td>2938</td>
+            <td>Maricel Maribojoc</td>
+            <td>maricel@gmail.com</td>
+            <td>18</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Data Science</td>
+        </tr>
+        <tr>
+            <td>2947</td>
+            <td>Coedy De la Cruz</td>
+            <td>coedy@gmail.com</td>
+            <td>29</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Networking</td>
+        </tr>
+        <tr>
+            <td>2956</td>
+            <td>Junnalyn Merillo</td>
+            <td>junnalyn@gmail.com</td>
+            <td>21</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td>2910</td>
+            <td>Ralph Amarillo</td>
+            <td>Ralph@gmail.com</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Web Development</td>
+        </tr>
+        <tr>
+            <td>3847</td>
+            <td>Margarette Felonia</td>
+            <td>Marga@gmail.com</td>
+            <td>27</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Data Science</td>
+        </tr>
+        <tr>
+            <td>3856</td>
+            <td>Joseph Israel</td>
+            <td>Joseph@gmail.com</td>
+            <td>24</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Networking</td>
+        </tr>
+    </table>
+</body>
+</html>
